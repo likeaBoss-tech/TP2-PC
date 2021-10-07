@@ -19,6 +19,7 @@ public class Main {
      for ( int i = 0 ; i<3; i++) {
          vector.add(new Card(random.nextInt(4), random.nextInt(14)));
      }
+
         System.out.println(vector);
     }
 }
