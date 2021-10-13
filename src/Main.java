@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public class Main {
     public static void main(String[] args) {
         /*Vector v = new Vector(10);
@@ -13,7 +11,7 @@ public class Main {
 
         System.out.println(card);*/
 
-     Random random = new Random();
+     /*Random random = new Random();
      Vector vector = new Vector();
 
      for ( int i = 0 ; i<3; i++) {
@@ -21,5 +19,40 @@ public class Main {
      }
 
         System.out.println(vector);
-    }
+    }*/
+ /*   Vector _verbose = new VerboseVector();
+        _verbose.add(new Card(0 ,0));
+        _verbose.add(2);
+        _verbose.set(1, 3);
+*/
+        /**En fait un test pour la classe RangeArray
+         * testttt aghilas*/
+        /*
+        int indexMin = -3;
+        int indexMax = 1;
+        RangeArray squares = new RangeArray(indexMin, indexMax);
+        for (int index =  squares.getIndexMin() ; index <= squares.getIndexMax() ; index++)
+            squares.set(index, index*index);
+        for (int index =  squares.getIndexMin() ; index <= squares.getIndexMax() ; index++)
+            System.out.println(index + " -> " + squares.get(index));
+        System.out.println(squares.rangeSize());
+        */
+        /*RangeArray<String> habitations = new RangeArray<String>(3, 5);
+        habitations.set(3, "Maison");
+        habitations.set(4, "Immeuble");
+        habitations.set(5, "Hutte");
+        for (int index =  habitations.getIndexMin();
+             index <= habitations.getIndexMax();
+             index++)
+            System.out.print(habitations.get(index).length() + " ");*/
+
+        RangeArray<String> habitations  = new RangeArray<String>(3,5);
+        habitations.set(3,"Maison");
+        habitations.set(4,"Immuble");
+        habitations.set(5,"Hutte");
+        for (String habitation :habitations)
+            System.out.println(habitation+" ");
+}
+
+
 }

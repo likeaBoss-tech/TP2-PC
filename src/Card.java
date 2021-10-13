@@ -1,8 +1,10 @@
-public class Card {
+import java.util.Iterator;
+
+public class Card<T> implements  Iterable<T>{
 
     private int suit;
     private int rank;
-
+    private  T[][] elements;
     public Card (int suit, int rank) {
         this.suit = suit;
         this.rank = rank;
@@ -28,4 +30,8 @@ public class Card {
         return build.toString();
     }
 
+    @Override
+    public Iterator<T> iterator() {
+        return null;
+    }
 }
